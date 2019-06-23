@@ -8,3 +8,9 @@ from .serializers import ArticleSerializer
 class ArticleListView(viewsets.ModelViewSet):
     queryset = Article.objects.all()
     serializer_class = ArticleSerializer
+
+
+# Article Details
+class ArticleDetailView(viewsets.ModelViewSet):
+    queryset = Article.objects.all()
+    serializer_class = ArticleSerializer
