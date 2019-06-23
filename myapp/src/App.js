@@ -9,7 +9,9 @@ import Article from "./components/Article";
 const App = () => {
   return (
     <div className="App">
-      <CustomLayout />
+      <CustomLayout>
+        <Article />
+      </CustomLayout>
     </div>
   );
 };
