@@ -1,16 +1,16 @@
 import React from "react";
-import "./App.css";
+
 import "antd/dist/antd.css";
 
 import CustomLayout from "./containers/Layout";
-import Article from "./components/Article";
+import ArticleListView from "./containers/ArticleListView";
 
 // es6 arrow function
 const App = () => {
   return (
     <div className="App">
       <CustomLayout>
-        <Article />
+        <ArticleListView />
       </CustomLayout>
     </div>
   );
