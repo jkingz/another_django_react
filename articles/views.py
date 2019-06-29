@@ -22,3 +22,9 @@ class ArticleDetailView(viewsets.ModelViewSet):
 class ArticleCreateView(viewsets.ModelViewSet):
     queryset = Article.objects.all()
     serializer_class = ArticleSerializer
+
+
+# Article Update View
+class ArticleUpdateVIew(viewsets.ModelViewSet):
+    queryset = Article.objects.all()
+    serializer_class = ArticleSerializer
