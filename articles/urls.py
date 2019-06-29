@@ -4,6 +4,8 @@ from .views import (
     ArticleListView,
     ArticleDetailView,
     ArticleCreateView,
+    ArticleUpdateVIew,
+    ArticleDeleteView,
 )
 
 
@@ -13,7 +15,9 @@ urlpatterns = [
     path(
         'create/', ArticleCreateView.as_view({'post': 'create'}), name="create_article"),
     path(
-        'update/', ArticleCreateView.as_view({'put': 'update'}), name="create_article"),
+        'update/<int:pk>/', ArticleUpdateVIew.as_view({'put': 'update'}), name="create_article"),
+    path(
+        'delete/<int:pk>/', ArticleDeleteView.as_view({'delete': 'destroy'}), name="create_article"),
     path('detail/<int:pk>/', ArticleDetailView.as_view(
         {'get': 'retrieve'}), name="article_detail"),
 
