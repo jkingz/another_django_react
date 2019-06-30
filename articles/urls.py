@@ -3,7 +3,7 @@ from rest_framework.routers import DefaultRouter
 
 # DRY KISS YAGNI
 router = DefaultRouter()
-router.register('articles', ArticleViewSet, base_name="article")
+router.register('', ArticleViewSet, base_name="article")
 urlpatterns = router.urls
 
 
