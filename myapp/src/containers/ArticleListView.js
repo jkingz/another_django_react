@@ -23,7 +23,7 @@ class ArticleListView extends React.Component {
         <Articles data={this.state.articles} />
         <br />
         <h2>Create and Article here!</h2>
-        <CustomForms />
+        <CustomForms requestType="post" articleID={null} btnText="Create" />
       </div>
     );
   }
