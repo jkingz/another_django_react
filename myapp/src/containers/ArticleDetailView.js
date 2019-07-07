@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 
-import { Card } from "antd";
+import { Card, Button } from "antd";
 
 import CustomForms from "../components/Forms";
 
@@ -20,6 +20,12 @@ class ArticleDetailView extends React.Component {
     });
   }
 
+  handleDelete = event => {
+    const articleID = this.props.match.params.articleID;
+    axios.delete(`http://localhost:8000/api/v1/${articleID}/`);
+    this.props.history.push("/");
+  };
+
   render() {
     return (
       <div>
@@ -31,6 +37,11 @@ class ArticleDetailView extends React.Component {
           articleID={this.props.match.params.articleID}
           btnText="Update"
         />
+        <form onSubmit={this.handleDelete}>
+          <Button type="danger" htmlType="submit">
+            Delete
+          </Button>
+        </form>
       </div>
     );
   }
