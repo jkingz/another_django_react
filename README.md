@@ -1,11 +1,20 @@
-# Lead Manager
+<h1 align="center">Welcome to django_react 👋</h1>
+<p>
+  <a href="https://twitter.com/jkingz">
+    <img alt="Twitter: jkingz" src="https://img.shields.io/twitter/follow/jkingz.svg?style=social" target="_blank" />
+  </a>
+</p>
 
-> Another Full stack `Django` `Django Rest framework` `React` `React-Redux` app that uses token based authentication.
+## Author
 
-## Authors
+👤 **jkingz**
 
-- **King Rule** - _Github_ - [GitHub](https://github.com/jkingz)
+* Twitter: [@jkingz](https://twitter.com/jkingz)
+* Github: [@jkingz](https://github.com/jkingz)
 
-## License
+## Show your support
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+Give a ⭐️ if this project helped you!
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
